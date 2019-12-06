@@ -1,0 +1,58 @@
+@import '~assets/variables';
+
+
+html .v-application{
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
+  font-size: 14px;
+  .v-input {
+    font-size: 14px;
+  }
+  .v-label {
+    font-size: 14px;
+    color: $darkColor
+  }
+}
+
+ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.v-application ul.list {
+  padding: 0;
+}
+
+.mainContainer {
+  background-color: #f4f7f7;
+  color: $darkColor;
+}
+
+.containerWithHeader {
+  /*
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+   */
+  min-height: 100%;
+  width: 100%;
+}
+
+.clearfix {
+  &:before,&:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clickableCommon {
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
